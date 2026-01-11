@@ -325,7 +325,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #47D3E5;
+			color: #01796f;
 		}
 
 	strong, b {
@@ -8652,6 +8652,7 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
 
 
 
