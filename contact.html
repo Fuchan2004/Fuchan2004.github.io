@@ -25,22 +25,26 @@
 			</header>
 
 		<!-- Wrapper -->
+		
 			<div id="wrapper" class="divided">
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen">
-						<div class="content">
-							<h1>Contact me</h1>
-							<h3> Woods Hole Oceanographic Institution</h3>
-							<p class="major"> 266 Woods Hole Road,
-								Watson Biogeochemical Building,
-								Office 117, MS #51,
-								02543 Woods Hole, MA, United States</p>
-							<p>E-mail: <a href="mailto:fstemmer@mit.edu"> fstemmer@mit.edu</a> </p>
-						</div>
-						  <!-- Map container -->
-						<div class="image map-container">
-							<div id="map"></div>
-						</div>
-					</section>
+				<!-- Banner / Contact Section -->
+				<section class="banner style1 orient-left content-align-left image-position-right fullscreen">
+					<div class="content">
+					    <h1>Contact me</h1>
+					    <h3>Woods Hole Oceanographic Institution</h3>
+					    <ul class="contact-info">
+					      <li>E-mail: <a href="mailto:fstemmer@mit.edu">fstemmer@mit.edu</a></li>
+					      <li>Address: 266 Woods Hole Road,</li>
+						  <li>Watson Biogeochemical Building,</li>
+						  <li>Office 117, MS #51,</li>
+						  <li>02543 Woods Hole, MA, United States</li>
+					    </ul>
+				  	</div>
+				
+				  	<div class="image map-container">
+				    	<div id="map"></div>
+				  	</div>
+				</section>
 			</div>
 		
 		<script
@@ -51,16 +55,16 @@
 
 		<script>
 		function initMap() {
-		  // Set map center (latitude, longitude)
+		  // Map center coordinates
 		  const myLocation = { lat: 41.5330, lng: -70.6489 };
 		
-		  // Create the map
+		  // Create map
 		  const map = new google.maps.Map(document.getElementById("map"), {
 		    center: myLocation,
 		    zoom: 15,
 		  });
 		
-		  // Optional: add a marker
+		  // Optional: marker
 		  const marker = new google.maps.Marker({
 		    position: myLocation,
 		    map: map,
