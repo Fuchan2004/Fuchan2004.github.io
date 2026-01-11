@@ -4379,9 +4379,13 @@ input, select, textarea {
 
 	.banner .image {
 		background-color: rgba(0, 0, 0, 0.125);
-		display: flex;
-  		justify-content: center;
-  		align-items: center;
+	}
+
+	.banner .image img {
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	  object-position: center top;
 	}
 
 	.banner.invert .image {
@@ -8605,3 +8609,4 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+
