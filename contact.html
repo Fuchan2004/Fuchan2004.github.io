@@ -41,37 +41,11 @@
 					    </ul>
 				  	</div>
 				
-				  	<div class="image map-container">
-				    	<div id="map"></div>
-				  	</div>
+				  	<div class="image">
+						<img src="images/WoodsHole.jpg" alt="" />
+					</div>
 				</section>
 			</div>
-		
-		<script
-  			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0t7e6xftQYJWrs0tCiHYfiUiWjSJfIZA&callback=initMap"
-  			async
-  			defer
-		></script>
-
-		<script>
-		function initMap() {
-		  // Map center coordinates
-		  const myLocation = { lat: 41.5330, lng: -70.6489 };
-		
-		  // Create map
-		  const map = new google.maps.Map(document.getElementById("map"), {
-		    center: myLocation,
-		    zoom: 15,
-		  });
-		
-		  // Optional: marker
-		  const marker = new google.maps.Marker({
-		    position: myLocation,
-		    map: map,
-		    title: "My Location",
-		  });
-		}
-		</script>
 
 	</body>
 </html>
