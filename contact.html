@@ -41,5 +41,31 @@
 						</div>
 					</section>
 			</div>
+		<script
+  			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0t7e6xftQYJWrs0tCiHYfiUiWjSJfIZA&callback=initMap"
+  			async
+  			defer
+		></script>
+
+		<script>
+		function initMap() {
+		  // Set map center (latitude, longitude)
+		  const myLocation = { lat: 41.5330, lng: -70.6489 };
+		
+		  // Create the map
+		  const map = new google.maps.Map(document.getElementById("map"), {
+		    center: myLocation,
+		    zoom: 15,
+		  });
+		
+		  // Optional: add a marker
+		  const marker = new google.maps.Marker({
+		    position: myLocation,
+		    map: map,
+		    title: "My Location",
+		  });
+		}
+		</script>
+
 	</body>
 </html>
